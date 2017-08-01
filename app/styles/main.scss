@@ -1,0 +1,279 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+/* layout */
+
+body {
+	background:#D3D3D3;
+}
+
+.container-fluid {
+	margin:15px 15px 15px 115px;
+	height:100%;
+	background:#fff;
+	max-width:1400px;
+}
+
+.borderaRed {
+	border:1px dashed rgb(255,0,0);
+	padding-top: 100px; 
+}
+
+.borderCY{
+	img{
+		max-width: 750px;
+		width: 100%;
+	}
+}
+
+
+/* nav */
+nav {    
+	position: fixed;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	height: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: #f7f7f7;
+	width:100px;
+	box-shadow:0px 4px 5px #ccc;
+	border-right:1px solid #ccc;
+}
+
+nav ul {
+	list-style:none;
+	padding-left:0;
+	li {
+		text-align:center;
+		border-bottom:1px solid #ccc;
+		a {
+			padding:20px 0;
+			display:list-item;
+			transition:all ease .4s;
+			&:hover {
+				background:#eee;
+			}
+
+		}
+
+	}
+
+}
+
+/* header */
+
+header {
+}
+
+/* main */
+
+#slider img{
+	max-height:330px;
+}
+
+
+.media-object {
+	border:2px solid #4E94C4;
+}
+
+.media{
+	margin-bottom: 20px;
+}
+
+.topnav {
+	position:fixed;
+	top:-15px;
+	width:100%;
+	padding:20px;
+	background:#555;
+	margin: 15px 15px 15px -15px;
+	max-width: 1142px;   
+	ul li a {
+		padding:0 20px;
+		border-left:1px dashed #eee;
+		color: white;
+	}
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h4.media-heading {
+    font-size: 16px;
+    padding: 15px;
+}
+.main.content {
+    padding-top: 80px;
+}
+
+// cards
+html {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    margin: 0;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+}
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a:hover {
+    color: rgba(0, 0, 0, .87);
+}
+
+
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+.img-rounded{
+	border-radius: 50%;
+}
+//paginator
+.NavigationItem{display:none;}
+.navSelected { color:red; display:  block; } 
+
+.next, .previous{
+    cursor:pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    border-radius: 4px;
+    border: 2px solid rgba(black,0.2);
+    padding: 2px 5px;
+}
+
+.fillSpace
+{
+    display:inline-block;
+    padding:0;margin:0;
+}
+
+.paginator
+{
+    padding: 15px;
+} 
+
+.pager {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    li{
+    	list-style: none;
+    }
+}
